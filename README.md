@@ -17,13 +17,13 @@ Kubectl get all -n ingress-nginx
 ### Out of three pods created by ingress-nginx 1 will be going to be in running state and other two will be going to be in completed state. 
 
 
-### Following command will setup cluster issuer in our kubernetes cluster and help us to generate TLS/SSL certificate for our domain.
+### Following command will setup cluster issuer in our kubernetes cluster and help us to generate TLS/SSL certificate for our domain.We will use Let's Encrypt as CA.
 ### We need to make changes in this file according to our requirements.
 
 kubectl apply -f cluster-issuer.yml 
 
 ### Following command will issue a TLS/SSL certificate for our domain.We need to make changes in it according to our requirements.E.g. Domain name
-### Before running this command you need to point your domain to the IP address of your Ingress controller that was generated earlier.
+### Before running this command you need to point your domain to the LoadBalancer IP address of your Ingress controller that was generated earlier.
 
 kubectl apply -f certificate.yml   
 
