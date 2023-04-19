@@ -3,7 +3,7 @@
 ### Following command will setup cert-manager in your kubernetes cluster.
 
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.11.0/cert-manager.yaml
-### We can check the pods and services created by cert-manager by running following command
+### We can check the pods and services created by cert-manager by running following command:
 Kubectl get all -n cert-manager       
 
 
