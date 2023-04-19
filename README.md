@@ -28,7 +28,7 @@ kubectl apply -f cluster-issuer.yml
 kubectl apply -f certificate.yml   
 
 # Following command will add TLS/SSL to our domain name. This will also use nginx-ingress controller as proxy in front of our service.
-#We need to make changes in this file according to our requirements.E.g. We will add the service name to which we want ingress controller to redirect our user.
+#### We need to make changes in this file according to our requirements.E.g. We will add the service name to which we want ingress controller to redirect our user.
 
 kubectl apply -f ingress.yml
         
