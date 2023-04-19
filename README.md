@@ -3,7 +3,7 @@
 ### Following command will setup cert-manager in your kubernetes cluster.
 
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.11.0/cert-manager.yaml
-### We can check the pods created by cert-manager by running following command
+### We can check the pods and services created by cert-manager by running following command
 Kubectl get all -n cert-manager       
 
 
@@ -11,7 +11,7 @@ Kubectl get all -n cert-manager
   
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.0.0/deploy/static/provider/cloud/deploy.yaml
 
-### We can check the pods created by ingress controller by running following command:
+### We can check the pods and services created by ingress controller by running following command:
 Kubectl get all -n ingress-nginx
          
 ### Out of three pods created by ingress-nginx 1 will be going to be in running state and other two will be going to be in completed state. 
