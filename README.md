@@ -14,7 +14,7 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/cont
 ### We can check the pods and services created by ingress controller by running following command:
 Kubectl get all -n ingress-nginx
          
-### Out of three pods created by ingress-nginx 1 will be going to be in running state and other two will be going to be in completed state. 
+### Out of three pods created by ingress-nginx, 1 will be going to be in running state and other two will be going to be in completed state. 
 
 
 ### Following command will setup cluster issuer in our kubernetes cluster and help us to generate TLS/SSL certificate for our domain.We will use Let's Encrypt as CA.You can use other available options as well.
